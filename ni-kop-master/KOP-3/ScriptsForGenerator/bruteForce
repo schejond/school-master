@@ -1,0 +1,16 @@
+echo 'Generating data for combination heavy - corr';
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c corr -m 0.5 -k 0 > ../InputData/BruteForce/heavy_corr_05_0;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c corr -m 0.5 -k 0.8 > ../InputData/BruteForce/heavy_corr_05_08;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c corr -m 0.5 -k 1.6 > ../InputData/BruteForce/heavy_corr_05_16;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c corr -m 0.5 -k 2.4 > ../InputData/BruteForce/heavy_corr_05_24;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c corr -m 0.5 -k 3.2 > ../InputData/BruteForce/heavy_corr_05_32;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c corr -m 0.5 -k 4 > ../InputData/BruteForce/heavy_corr_05_4;
+#
+#
+echo 'Generating data for combination light - corr';
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w light -c corr -m 0.5 -k 0 > ../InputData/BruteForce/light_corr_05_0;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w light -c corr -m 0.5 -k 0.8 > ../InputData/BruteForce/light_corr_05_08;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w light -c corr -m 0.5 -k 1.6 > ../InputData/BruteForce/light_corr_05_16;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w light -c corr -m 0.5 -k 2.4 > ../InputData/BruteForce/light_corr_05_24;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w light -c corr -m 0.5 -k 3.2 > ../InputData/BruteForce/light_corr_05_32;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w light -c corr -m 0.5 -k 4 > ../InputData/BruteForce/light_corr_05_4;

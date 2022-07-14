@@ -1,0 +1,40 @@
+ssh schejond@star.fit.cvut.cz
+
+scp /mnt/c/Users/OndraS/Documents/School/ni-pdp/5/ schejond@star.fit.cvut.cz:/home/schejond/
+
+scp -r schejond@star.fit.cvut.cz:/home/schejond/csvs/ /mnt/c/Users/OndraS/Documents/School/ni-pdp/5/
+
+cp /home/mpi/serial_job.sh ~/
+	serial_job (pro sekv. a OpenMP) a parallel_job.sh (pro MPI)
+	ve scriptech upravit nazev programu
+
+qstat
+	Vypíše aktuální informaci o tvych naplánovaných a spuštěných požadavcích
+
+	qstat -j Id
+	qdel id
+
+openMP
+
+g++ -std=c++11 -Wall -pedantic -O3 -funroll-loops -fopenmp main.cpp -o a.out
+
+prikaz na robehnuti
+	qrun 20c 1 pdp_serial serial_job.sh
+
+// hints k openMP
+	omp_set_num_threads(int i)
+	omp_get_num_threads()
+	omp_get_max_threads()
+
+MPI
+
+MY_PARALLEL_PROGRAM="./my_parallel_program arg1 arg2 ..."
+#$ -i ./testData/saj1.txt
+
+// kompilace a spousteni mpi programu lokalne
+mpic++ main.cpp -o mpi.out -std=c++11 -Wall -pedantic -O3 -funroll-loops -fopenmp
+mpirun -np 4 ./mpi.out ../testData/saj6.txt 1 2
+
+prikaz na robehnuti .. cislo muze byt 1/2/3/4
+	qrun 20c 4 pdp_fast parallel_job.sh
+	qrun 20c 4 pdp_long parallel_job.sh

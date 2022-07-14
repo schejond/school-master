@@ -1,0 +1,42 @@
+echo 'Generating data for combination bal - uni with diff max prices 1/2';
+# v nazvu m = 081 slouzi pouze k unifikaci zaznamu, parametr m ma defaultni hodnotu, tedy 0.8
+../generator/kg2 -n 20 -N 50 -W 750 -C 200 -w bal -c uni > ../InputData/DP_PD/bal_uni_081_2;
+../generator/kg2 -n 20 -N 50 -W 750 -C 500 -w bal -c uni > ../InputData/DP_PD/bal_uni_081_3;
+../generator/kg2 -n 20 -N 50 -W 750 -C 800 -w bal -c uni > ../InputData/DP_PD/bal_uni_081_4;
+../generator/kg2 -n 20 -N 50 -W 750 -C 1300 -w bal -c uni > ../InputData/DP_PD/bal_uni_081_5;
+#
+#
+echo 'Generating data for combination bal - uni with diff max prices 2/2';
+# v nazvu m = 081 slouzi pouze k unifikaci zaznamu, parametr m ma defaultni hodnotu, tedy 0.8
+../generator/kg2 -n 20 -N 50 -W 1000 -C 200 -w bal -c uni > ../InputData/DP_PD/bal_uni_082_2;
+../generator/kg2 -n 20 -N 50 -W 1000 -C 500 -w bal -c uni > ../InputData/DP_PD/bal_uni_082_3;
+../generator/kg2 -n 20 -N 50 -W 1000 -C 800 -w bal -c uni > ../InputData/DP_PD/bal_uni_082_4;
+../generator/kg2 -n 20 -N 50 -W 1000 -C 1300 -w bal -c uni > ../InputData/DP_PD/bal_uni_082_5;
+#
+#
+#
+#
+echo 'Generating data for combination bal - uni with diff max prices - BIG EXPERIMENT';
+# v nazvu m = 083 slouzi pouze k unifikaci zaznamu, parametr m ma defaultni hodnotu, tedy 0.8
+# posledni cast za _ obsahuje maximalni stanovanou cenu
+../generator/kg2 -n 20 -N 500 -W 600 -C 100 -w bal -c uni > ../InputData/DP_PD/bal_uni_083_100;
+../generator/kg2 -n 20 -N 500 -W 600 -C 27876 -w bal -c uni > ../InputData/DP_PD/bal_uni_083_27876;
+../generator/kg2 -n 20 -N 500 -W 600 -C 55653 -w bal -c uni > ../InputData/DP_PD/bal_uni_083_55653;
+../generator/kg2 -n 20 -N 500 -W 600 -C 83430 -w bal -c uni > ../InputData/DP_PD/bal_uni_083_83430;
+../generator/kg2 -n 20 -N 500 -W 600 -C 111207 -w bal -c uni > ../InputData/DP_PD/bal_uni_083_111207;
+../generator/kg2 -n 20 -N 500 -W 600 -C 138984 -w bal -c uni > ../InputData/DP_PD/bal_uni_083_138984;
+../generator/kg2 -n 20 -N 500 -W 600 -C 166761 -w bal -c uni > ../InputData/DP_PD/bal_uni_083_166761;
+../generator/kg2 -n 20 -N 500 -W 600 -C 194538 -w bal -c uni > ../InputData/DP_PD/bal_uni_083_194538;
+../generator/kg2 -n 20 -N 500 -W 600 -C 222315 -w bal -c uni > ../InputData/DP_PD/bal_uni_083_222315;
+../generator/kg2 -n 20 -N 500 -W 600 -C 250000 -w bal -c uni > ../InputData/DP_PD/bal_uni_083_250000;
+#
+#
+#
+echo 'Generating data for combination light - corr with diff granularity'
+# v nazvu m = 084 slouzi pouze k unifikaci zaznamu, parametr m ma defaultni hodnotu, tedy 0.8
+../generator/kg2 -n 20 -N 50 -W 500 -C 300 -w light -c corr -k 0 > ../InputData/DP_PD/bal_uni_084_0;
+../generator/kg2 -n 20 -N 50 -W 500 -C 300 -w light -c corr -k 0.5 > ../InputData/DP_PD/bal_uni_084_05;
+../generator/kg2 -n 20 -N 50 -W 500 -C 300 -w light -c corr -k 1 > ../InputData/DP_PD/bal_uni_084_1;
+../generator/kg2 -n 20 -N 50 -W 500 -C 300 -w light -c corr -k 1.5 > ../InputData/DP_PD/bal_uni_084_15;
+../generator/kg2 -n 20 -N 50 -W 500 -C 300 -w light -c corr -k 2 > ../InputData/DP_PD/bal_uni_084_2;
+#

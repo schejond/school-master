@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for i in {1..12}
+do
+  echo "Saj: $i running";
+  ./a.out ../01/testData/saj$i.txt;
+  echo "Saj: $i running for second time";
+  ./a.out ../01/testData/saj$i.txt;
+done
+echo "All DONE";

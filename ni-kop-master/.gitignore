@@ -1,0 +1,13 @@
+.ipynb_checkpoints/
+out/
+.idea/
+
+KOP-3/generator/kg2.o
+KOP-3/generator/kg_inst.o
+KOP-3/generator/kg_perm.o
+KOP-3/generator/kg_rngctrl.o
+KOP-3/generator/xoshiro256plus.o
+KOP-3/generator/kg_perm
+KOP-3/generator/kg2
+
+KOP-5/DataGenerator/a.out

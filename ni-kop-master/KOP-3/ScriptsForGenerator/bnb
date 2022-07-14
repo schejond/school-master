@@ -1,0 +1,20 @@
+echo 'Generating data for combination heavy - strong';
+# v nazvu m = 051 slouzi pouze k unifikaci zaznamu
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c strong -m 0.5 -k 0 > ../InputData/BranchAndBound/heavy_strong_051_m2;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c strong -m 0.5 -k 0.8 > ../InputData/BranchAndBound/heavy_strong_051_m125;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c strong -m 0.5 -k 1.6 > ../InputData/BranchAndBound/heavy_strong_051_m05;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c strong -m 0.5 -k 2.4 > ../InputData/BranchAndBound/heavy_strong_051_025;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c strong -m 0.5 -k 3.2 > ../InputData/BranchAndBound/heavy_strong_051_1;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c strong -m 0.5 -k 4 > ../InputData/BranchAndBound/heavy_strong_051_175;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w heavy -c strong -m 0.5 -k 4 > ../InputData/BranchAndBound/heavy_strong_051_25;
+#
+#
+echo 'Generating data for combination bal - uni';
+# v nazvu m = 051 slouzi pouze k unifikaci zaznamu
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w bal -c uni -m 0.5 -k 0 > ../InputData/BranchAndBound/bal_uni_051_m2;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w bal -c uni -m 0.5 -k 0.8 > ../InputData/BranchAndBound/bal_uni_051_m125;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w bal -c uni -m 0.5 -k 1.6 > ../InputData/BranchAndBound/bal_uni_051_m05;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w bal -c uni -m 0.5 -k 2.4 > ../InputData/BranchAndBound/bal_uni_051_025;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w bal -c uni -m 0.5 -k 3.2 > ../InputData/BranchAndBound/bal_uni_051_1;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w bal -c uni -m 0.5 -k 4 > ../InputData/BranchAndBound/bal_uni_051_175;
+../generator/kg2 -n 20 -N 400 -W 1000 -C 600 -w bal -c uni -m 0.5 -k 4 > ../InputData/BranchAndBound/bal_uni_051_25;
